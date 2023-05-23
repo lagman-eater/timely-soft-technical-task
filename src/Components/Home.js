@@ -1,24 +1,20 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import noImage from '../images/noImage.jpg'
 import { Link } from 'react-router-dom';
-import { NewsPage } from './NewsPage';
 
-export function Home({ newsData, setNewsId }) {
-    // const [newsId, setNewsId] = useState()
+export function Home({ newsData, setNewsId, setRefreshPage, refreshPage }) {
 
     function truncate(str, n) {
         return (str.length > n) ? str.slice(0, n - 1) + '...' : str;
     };
 
-    // useEffect(() => {
-    //     console.log(newsId);
-    // }, [newsId])
-    // console.log(newsData);
     return (
         <>
             <header>
                 <h1>Diushembiev Aidar news API app</h1>
-                <nav></nav>
+                <nav>
+                    <button onClick={() => setRefreshPage(!refreshPage)} className='refresh-btn'>Нажмите для обновления</button>
+                </nav>
             </header>
             <div className="main">
                 <div className="news-cont">

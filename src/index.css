@@ -20,10 +20,40 @@ header {
   justify-content: space-between;
 }
 
+header h1{
+  margin-left: 30px;
+}
+
+.refresh-btn{
+  width: auto;
+  height: 50px;
+  margin-left: 30px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: .3s all ease;
+}
+
+.refresh-btn:hover{
+  background-color: hsl(240, 100%, 90%);
+}
+
 nav {
+  display: flex;
+  align-items: center;
   background-color: royalblue;
   width: 100%;
   height: 100px;
+}
+nav a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  transition: .3s all ease;
+}
+
+nav a:hover{
+  color: hsl(240, 100%, 80%);
 }
 
 .main {
@@ -51,8 +81,6 @@ nav {
 
 .news-img {
   width: 30%;
-  /* min-width: 300px;
-  max-width: 400px; */
   aspect-ratio: 2 / 1;
   cursor: pointer;
 }
@@ -89,12 +117,24 @@ nav {
   margin: 0 20px;
 }
 
-/* .news-desc{
-  text-decoration: none;
-  color: #000;
-  cursor: initial;
-} */
-
 .news-language{
   text-transform: uppercase;
+}
+
+.news-page-cont{
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.news-page-img{
+  max-width: 80%;
+  aspect-ratio: 2 / 1;
+}
+
+.news-page-img img {
+  width: 100%;
+  height: 100%;
 }
