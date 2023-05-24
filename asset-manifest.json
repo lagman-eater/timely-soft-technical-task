@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/timely-soft-technical-task/static/css/main.d54473fb.css",
+    "main.js": "/timely-soft-technical-task/static/js/main.19cab58c.js",
+    "static/media/noImage.jpg": "/timely-soft-technical-task/static/media/noImage.2efe78cdf6dbf909f571.jpg",
+    "index.html": "/timely-soft-technical-task/index.html",
+    "main.d54473fb.css.map": "/timely-soft-technical-task/static/css/main.d54473fb.css.map",
+    "main.19cab58c.js.map": "/timely-soft-technical-task/static/js/main.19cab58c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d54473fb.css",
+    "static/js/main.19cab58c.js"
+  ]
+}
