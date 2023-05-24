@@ -8,6 +8,10 @@ export function Home({ newsData, setNewsId, setRefreshPage, refreshPage }) {
         return (str.length > n) ? str.slice(0, n - 1) + '...' : str;
     };
 
+    function ratingNumber() {
+        return Math.floor(Math.random() * 10) + 5;
+    }
+
     return (
         <>
             <header>
@@ -33,6 +37,7 @@ export function Home({ newsData, setNewsId, setRefreshPage, refreshPage }) {
                                         <div>{news.author ? news.author : 'No author'}</div>
                                         <div className="news-date">{news.publishedAt}</div>
                                         <div className="news-language">EN</div>
+                                        <div>{`${ratingNumber()},${ratingNumber()}`}/10</div>
                                     </div>
                                     <div className="news-desc" to={``}>{truncate(news.description, 500)}</div>
                                 </div>
